@@ -420,6 +420,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = XBUtils/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xiabob.XBUtils;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -431,6 +432,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = XBUtils/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xiabob.XBUtils;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -502,6 +504,7 @@
 				7406EA7E1D6BFD28007808BB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7406EA7F1D6BFD28007808BB /* Build configuration list for PBXNativeTarget "XBUtilsTests" */ = {
 			isa = XCConfigurationList;
@@ -510,6 +513,7 @@
 				7406EA811D6BFD28007808BB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7406EA821D6BFD28007808BB /* Build configuration list for PBXNativeTarget "XBUtilsUITests" */ = {
 			isa = XCConfigurationList;
@@ -518,6 +522,7 @@
 				7406EA841D6BFD28007808BB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface XBWeakProxy : NSObject
+@interface XBWeakProxy : NSProxy
 
 @property (nonatomic, weak, readonly) id target;
 
