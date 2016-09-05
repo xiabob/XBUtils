@@ -8,8 +8,9 @@
 
 #import "ViewController.h"
 #import "XBWeakProxy.h"
+#import "XBJsonKit.h"
 
-@protocol testProtocal <NSObject>
+@protocol TestProtocal <NSObject>
 
 - (void)test;
 
@@ -17,7 +18,7 @@
 
 @interface TestView : UIView
 
-@property (nonatomic, weak) id<testProtocal> delegate;
+@property (nonatomic, weak) id<TestProtocal> delegate;
 
 @end
 
@@ -40,7 +41,7 @@
 
 @end
 
-@interface ViewController ()<testProtocal>
+@interface ViewController ()<TestProtocal>
 
 @property (nonatomic, strong) TestView *myView;
 
@@ -53,14 +54,32 @@
     // Do any additional setup after loading the view, typically from a nib.
     NSLog(@"begin……");
     
+    //******** XBWeakProxy ***********//
     //delegate是weak，不起作用
-    _myView = [[TestView alloc] initWithDelegate:[XBWeakProxy proxyWithTarget:self]];
-//    _myView = [[TestView alloc] initWithDelegate:self];
+    //_myView = [[TestView alloc] initWithDelegate:[XBWeakProxy proxyWithTarget:self]];
+    _myView = [[TestView alloc] initWithDelegate:self];
+    
+    
+    
+    //******** XBJsonKit ************//
+    NSArray *test1 = @[@"1", @"haha", @"天"];
+    NSLog(@"test1:\n%@", [test1 jsonRepresentation]);
+    
+    NSDictionary *test2 = @{@"name": @"haha", @"age": @"12", @"date":@[@"2015", @"12"]};
+    NSLog(@"test2:\n%@", [test2 jsonRepresentation]);
+    
+    NSString *test3 = [test2 jsonRepresentation];
+    NSLog(@"test3:\n%@", [test3 jsonValue]);
+    
+    NSData *test4 = [test3 dataUsingEncoding:NSUTF8StringEncoding];
+    NSLog(@"test4:\n%@", [test4 jsonValue]);
     
 }
 
+
+//MARK: - TestProtocal
 - (void)test {
-    NSLog(@"test");
+    NSLog(@"TestProtocal:test");
 }
 
 - (void)didReceiveMemoryWarning {

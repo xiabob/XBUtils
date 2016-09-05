@@ -17,6 +17,7 @@
 		7406EA781D6BFD28007808BB /* XBUtilsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7406EA771D6BFD28007808BB /* XBUtilsUITests.m */; };
 		7406EA871D6BFD5E007808BB /* XBWeakProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7406EA861D6BFD5E007808BB /* XBWeakProxy.m */; };
 		742F36BB1D77D5A1001F0A28 /* GCDMulticastDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 742F36BA1D77D5A1001F0A28 /* GCDMulticastDelegate.m */; };
+		74A1767B1D7D1AE600DE0218 /* XBJsonKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 74A1767A1D7D1AE600DE0218 /* XBJsonKit.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,8 @@
 		7406EA861D6BFD5E007808BB /* XBWeakProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XBWeakProxy.m; sourceTree = "<group>"; };
 		742F36B91D77D5A1001F0A28 /* GCDMulticastDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDMulticastDelegate.h; sourceTree = "<group>"; };
 		742F36BA1D77D5A1001F0A28 /* GCDMulticastDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDMulticastDelegate.m; sourceTree = "<group>"; };
+		74A176791D7D1AE600DE0218 /* XBJsonKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XBJsonKit.h; sourceTree = "<group>"; };
+		74A1767A1D7D1AE600DE0218 /* XBJsonKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XBJsonKit.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +110,7 @@
 		7406EA511D6BFD27007808BB /* XBUtils */ = {
 			isa = PBXGroup;
 			children = (
+				74A176781D7D1AE500DE0218 /* XBJsonKit */,
 				7406EA551D6BFD27007808BB /* AppDelegate.h */,
 				7406EA561D6BFD28007808BB /* AppDelegate.m */,
 				7406EA581D6BFD28007808BB /* ViewController.h */,
@@ -148,6 +152,15 @@
 				7406EA791D6BFD28007808BB /* Info.plist */,
 			);
 			path = XBUtilsUITests;
+			sourceTree = "<group>";
+		};
+		74A176781D7D1AE500DE0218 /* XBJsonKit */ = {
+			isa = PBXGroup;
+			children = (
+				74A176791D7D1AE600DE0218 /* XBJsonKit.h */,
+				74A1767A1D7D1AE600DE0218 /* XBJsonKit.m */,
+			);
+			path = XBJsonKit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -284,6 +297,7 @@
 				7406EA5A1D6BFD28007808BB /* ViewController.m in Sources */,
 				7406EA571D6BFD28007808BB /* AppDelegate.m in Sources */,
 				7406EA541D6BFD27007808BB /* main.m in Sources */,
+				74A1767B1D7D1AE600DE0218 /* XBJsonKit.m in Sources */,
 				742F36BB1D77D5A1001F0A28 /* GCDMulticastDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
