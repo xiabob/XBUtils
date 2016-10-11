@@ -63,6 +63,7 @@
 		7433F25F1DAC7FA60033C389 /* XBWeakProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XBWeakProxy.m; sourceTree = "<group>"; };
 		7433F2651DAC81A80033C389 /* UIView+XBAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+XBAdd.h"; sourceTree = "<group>"; };
 		7433F2661DAC81A80033C389 /* UIView+XBAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+XBAdd.m"; sourceTree = "<group>"; };
+		7433F27A1DACBF840033C389 /* XBUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XBUtils.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +114,7 @@
 		7406EA511D6BFD27007808BB /* XBUtils */ = {
 			isa = PBXGroup;
 			children = (
+				7433F27A1DACBF840033C389 /* XBUtils.h */,
 				7433F2631DAC80200033C389 /* Base */,
 				7433F2581DAC7FA60033C389 /* Utility */,
 				7406EA551D6BFD27007808BB /* AppDelegate.h */,

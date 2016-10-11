@@ -1,0 +1,18 @@
+//
+//  XBUtils.h
+//  Lkong
+//
+//  Created by xiabob on 16/10/11.
+//  Copyright © 2016年 xiabob. All rights reserved.
+//
+
+#ifndef XBUtils_h
+#define XBUtils_h
+
+
+#import "UIView+XBAdd.h"
+#import "GCDMulticastDelegate.h"
+#import "XBWeakProxy.h"
+
+
+#endif /* XBUtils_h */

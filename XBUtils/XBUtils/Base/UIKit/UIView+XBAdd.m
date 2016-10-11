@@ -195,6 +195,16 @@
     self.frame = frame;
 }
 
+- (CGFloat)relativeRight {
+    return CGRectGetMaxX(self.frame);
+}
+
+- (void)setRelativeRight:(CGFloat)relativeRight {
+    CGRect frame = self.frame;
+    frame.size.width = relativeRight - frame.origin.x;
+    self.frame = frame;
+}
+
 - (CGFloat)bottom {
     return self.frame.origin.y + self.frame.size.height;
 }
@@ -202,6 +212,16 @@
 - (void)setBottom:(CGFloat)bottom {
     CGRect frame = self.frame;
     frame.origin.y = bottom - frame.size.height;
+    self.frame = frame;
+}
+
+- (CGFloat)relativeBottom {
+    return CGRectGetMaxY(self.frame);
+}
+
+- (void)setRelativeBottom:(CGFloat)relativeBottom {
+    CGRect frame = self.frame;
+    frame.size.height = relativeBottom - frame.origin.y;
     self.frame = frame;
 }
 
