@@ -2,6 +2,8 @@
 //  XBWeakProxy.h
 //  XBUtils
 //
+//  Get from YYWebImageOperation
+//
 //  Created by xiabob on 16/8/23.
 //  Copyright © 2016年 xiabob. All rights reserved.
 //
