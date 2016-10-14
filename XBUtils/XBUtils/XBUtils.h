@@ -13,6 +13,7 @@
 #import "UIView+XBAdd.h"
 #import "GCDMulticastDelegate.h"
 #import "XBWeakProxy.h"
+#import "XBJsonKit.h"
 
 
 #endif /* XBUtils_h */
