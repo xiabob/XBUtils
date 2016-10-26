@@ -11,7 +11,7 @@
 #pragma mark - NSObject (XBJson)
 @implementation NSObject (XBJson)
 
-- (NSString *)jsonRepresentation {
+- (nullable NSString *)jsonRepresentation {
     @try {
         NSData *data = [NSJSONSerialization dataWithJSONObject:self
                                                        options:NSJSONWritingPrettyPrinted
@@ -24,7 +24,7 @@
     return nil;
 }
 
-- (NSString *)_getStringFromData:(NSData *)data {
+- (nullable NSString *)_getStringFromData:(NSData *)data {
     //处理两种常见的编码格式
     NSString *string = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
     if (!string) {
@@ -40,7 +40,7 @@
 #pragma mark - NSString (XBJson)
 @implementation NSString (XBJson)
 
-- (id)jsonValue {
+- (nullable id)jsonValue {
     @try {
         NSData *data = [self dataUsingEncoding:NSUTF8StringEncoding];
         if (!data) {
@@ -62,7 +62,7 @@
 #pragma mark - NSData (XBJson)
 @implementation NSData (XBJson)
 
-- (id)jsonValue {
+- (nullable id)jsonValue {
     @try {
         return [NSJSONSerialization JSONObjectWithData:self
                                                options:NSJSONReadingAllowFragments

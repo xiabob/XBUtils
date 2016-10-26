@@ -20,7 +20,7 @@
  @li NSDictionary
  @li NSArray
  */
-- (NSString *)jsonRepresentation;
+- (nullable NSString *)jsonRepresentation;
 
 @end
 
@@ -35,7 +35,7 @@
  
  Returns the NSDictionary or NSArray represented by the current string's JSON representation.
  */
-- (id)jsonValue;
+- (nullable id)jsonValue;
 
 @end
 
@@ -43,7 +43,7 @@
 #pragma mark - NSData
 @interface NSData (XBJson)
 
-- (id)jsonValue;  ///< Returns the dictionary or array represented in the receiver, or nil on error.
+- (nullable id)jsonValue;  ///< Returns the dictionary or array represented in the receiver, or nil on error.
 
 @end
 
