@@ -19,6 +19,8 @@
 		7439182E1DC04B8900FCA6C6 /* GCDMulticastDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 743918261DC04B8900FCA6C6 /* GCDMulticastDelegate.m */; };
 		7439182F1DC04B8900FCA6C6 /* XBJsonKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 743918291DC04B8900FCA6C6 /* XBJsonKit.m */; };
 		743918301DC04B8900FCA6C6 /* XBWeakProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7439182B1DC04B8900FCA6C6 /* XBWeakProxy.m */; };
+		743918351DC04EED00FCA6C6 /* NSString+XBAppVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = 743918341DC04EED00FCA6C6 /* NSString+XBAppVersion.m */; };
+		743918381DC053EC00FCA6C6 /* XBAppVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = 743918371DC053EC00FCA6C6 /* XBAppVersion.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +66,10 @@
 		7439182A1DC04B8900FCA6C6 /* XBWeakProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XBWeakProxy.h; sourceTree = "<group>"; };
 		7439182B1DC04B8900FCA6C6 /* XBWeakProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XBWeakProxy.m; sourceTree = "<group>"; };
 		7439182C1DC04B8900FCA6C6 /* XBUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XBUtils.h; sourceTree = "<group>"; };
+		743918331DC04EED00FCA6C6 /* NSString+XBAppVersion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+XBAppVersion.h"; sourceTree = "<group>"; };
+		743918341DC04EED00FCA6C6 /* NSString+XBAppVersion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+XBAppVersion.m"; sourceTree = "<group>"; };
+		743918361DC053EC00FCA6C6 /* XBAppVersion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XBAppVersion.h; sourceTree = "<group>"; };
+		743918371DC053EC00FCA6C6 /* XBAppVersion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XBAppVersion.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -185,6 +191,7 @@
 		743918241DC04B8900FCA6C6 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				743918321DC04E8600FCA6C6 /* AppVersionKit */,
 				743918251DC04B8900FCA6C6 /* GCDMulticastDelegate.h */,
 				743918261DC04B8900FCA6C6 /* GCDMulticastDelegate.m */,
 				743918271DC04B8900FCA6C6 /* XBJsonKit */,
@@ -208,6 +215,17 @@
 			children = (
 			);
 			path = Foundation;
+			sourceTree = "<group>";
+		};
+		743918321DC04E8600FCA6C6 /* AppVersionKit */ = {
+			isa = PBXGroup;
+			children = (
+				743918331DC04EED00FCA6C6 /* NSString+XBAppVersion.h */,
+				743918341DC04EED00FCA6C6 /* NSString+XBAppVersion.m */,
+				743918361DC053EC00FCA6C6 /* XBAppVersion.h */,
+				743918371DC053EC00FCA6C6 /* XBAppVersion.m */,
+			);
+			path = AppVersionKit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -347,6 +365,8 @@
 				7406EA541D6BFD27007808BB /* main.m in Sources */,
 				743918301DC04B8900FCA6C6 /* XBWeakProxy.m in Sources */,
 				7439182F1DC04B8900FCA6C6 /* XBJsonKit.m in Sources */,
+				743918351DC04EED00FCA6C6 /* NSString+XBAppVersion.m in Sources */,
+				743918381DC053EC00FCA6C6 /* XBAppVersion.m in Sources */,
 				7439182E1DC04B8900FCA6C6 /* GCDMulticastDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

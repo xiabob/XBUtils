@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "XBWeakProxy.h"
 #import "XBJsonKit.h"
+#import "XBAppVersion.h"
 
 @protocol TestProtocal <NSObject>
 
@@ -74,6 +75,15 @@
     NSData *test4 = [test3 dataUsingEncoding:NSUTF8StringEncoding];
     NSLog(@"test4:\n%@", [test4 jsonValue]);
     
+    
+    //******** XBAppVersion ************//
+    NSString *currentAppVersion = [XBAppVersion appVersion];
+    NSLog(@"current app version: %@", currentAppVersion);
+    
+    NSLog(@"current app version greaterThan 0.11.1: %@", @([XBAppVersion greaterThan:@"0.11.1"]));
+    NSLog(@"current app version lessThan 1.10.0: %@", @([XBAppVersion lessThan:@"1.10.0"]));
+    NSLog(@"current app version same 1.0: %@", @([XBAppVersion same:@"1.0"]));
+    NSLog(@"current app version lessThan 1.a: %@", @([currentAppVersion xb_lessThan:@"1.a"]));
 }
 
 
