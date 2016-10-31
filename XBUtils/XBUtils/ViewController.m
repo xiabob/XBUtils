@@ -7,9 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "XBWeakProxy.h"
-#import "XBJsonKit.h"
-#import "XBAppVersion.h"
+#import "XBUtils.h"
 
 @protocol TestProtocal <NSObject>
 
@@ -84,6 +82,12 @@
     NSLog(@"current app version lessThan 1.10.0: %@", @([XBAppVersion lessThan:@"1.10.0"]));
     NSLog(@"current app version same 1.0: %@", @([XBAppVersion same:@"1.0"]));
     NSLog(@"current app version lessThan 1.a: %@", @([currentAppVersion xb_lessThan:@"1.a"]));
+    
+    NSString *infoPath = [[NSBundle mainBundle] pathForResource:@"Info" ofType:@"plist"];
+    NSString *md5 = [XBFileHash md5HashOfFileAtPath:infoPath];
+    NSString *sha1Hash = [XBFileHash sha1HashOfFileAtPath:infoPath];
+    NSString *sha512Hash = [XBFileHash sha512HashOfFileAtPath:infoPath];
+    NSLog(@"md5:%@\nsha1Hash:%@\nsha512Hash:%@", md5, sha1Hash, sha512Hash);
 }
 
 

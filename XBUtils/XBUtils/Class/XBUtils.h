@@ -14,6 +14,7 @@
 #import "GCDMulticastDelegate.h"
 #import "XBWeakProxy.h"
 #import "XBJsonKit.h"
-
+#import "XBAppVersion.h"
+#import "XBFileHash.h"
 
 #endif /* XBUtils_h */

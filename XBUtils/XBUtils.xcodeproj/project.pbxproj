@@ -21,6 +21,7 @@
 		743918301DC04B8900FCA6C6 /* XBWeakProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7439182B1DC04B8900FCA6C6 /* XBWeakProxy.m */; };
 		743918351DC04EED00FCA6C6 /* NSString+XBAppVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = 743918341DC04EED00FCA6C6 /* NSString+XBAppVersion.m */; };
 		743918381DC053EC00FCA6C6 /* XBAppVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = 743918371DC053EC00FCA6C6 /* XBAppVersion.m */; };
+		74723ABD1DC6E4BC00509AB8 /* XBFileHash.m in Sources */ = {isa = PBXBuildFile; fileRef = 74723ABC1DC6E4BC00509AB8 /* XBFileHash.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +71,8 @@
 		743918341DC04EED00FCA6C6 /* NSString+XBAppVersion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+XBAppVersion.m"; sourceTree = "<group>"; };
 		743918361DC053EC00FCA6C6 /* XBAppVersion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XBAppVersion.h; sourceTree = "<group>"; };
 		743918371DC053EC00FCA6C6 /* XBAppVersion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XBAppVersion.m; sourceTree = "<group>"; };
+		74723ABB1DC6E4BC00509AB8 /* XBFileHash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XBFileHash.h; sourceTree = "<group>"; };
+		74723ABC1DC6E4BC00509AB8 /* XBFileHash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XBFileHash.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -191,10 +194,11 @@
 		743918241DC04B8900FCA6C6 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				74723ABA1DC6E4A000509AB8 /* XBFileMD5Hash */,
+				743918271DC04B8900FCA6C6 /* XBJsonKit */,
 				743918321DC04E8600FCA6C6 /* AppVersionKit */,
 				743918251DC04B8900FCA6C6 /* GCDMulticastDelegate.h */,
 				743918261DC04B8900FCA6C6 /* GCDMulticastDelegate.m */,
-				743918271DC04B8900FCA6C6 /* XBJsonKit */,
 				7439182A1DC04B8900FCA6C6 /* XBWeakProxy.h */,
 				7439182B1DC04B8900FCA6C6 /* XBWeakProxy.m */,
 			);
@@ -226,6 +230,15 @@
 				743918371DC053EC00FCA6C6 /* XBAppVersion.m */,
 			);
 			path = AppVersionKit;
+			sourceTree = "<group>";
+		};
+		74723ABA1DC6E4A000509AB8 /* XBFileMD5Hash */ = {
+			isa = PBXGroup;
+			children = (
+				74723ABB1DC6E4BC00509AB8 /* XBFileHash.h */,
+				74723ABC1DC6E4BC00509AB8 /* XBFileHash.m */,
+			);
+			path = XBFileMD5Hash;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -360,6 +373,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7439182D1DC04B8900FCA6C6 /* UIView+XBAdd.m in Sources */,
+				74723ABD1DC6E4BC00509AB8 /* XBFileHash.m in Sources */,
 				7406EA5A1D6BFD28007808BB /* ViewController.m in Sources */,
 				7406EA571D6BFD28007808BB /* AppDelegate.m in Sources */,
 				7406EA541D6BFD27007808BB /* main.m in Sources */,
