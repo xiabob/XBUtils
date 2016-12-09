@@ -15,6 +15,7 @@
 		7406EA621D6BFD28007808BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7406EA601D6BFD28007808BB /* LaunchScreen.storyboard */; };
 		7406EA6D1D6BFD28007808BB /* XBUtilsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7406EA6C1D6BFD28007808BB /* XBUtilsTests.m */; };
 		7406EA781D6BFD28007808BB /* XBUtilsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7406EA771D6BFD28007808BB /* XBUtilsUITests.m */; };
+		741C01A61DFA897A00A79871 /* NSURL+ParameterParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 741C01A51DFA897A00A79871 /* NSURL+ParameterParser.m */; };
 		7439182D1DC04B8900FCA6C6 /* UIView+XBAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 743918231DC04B8900FCA6C6 /* UIView+XBAdd.m */; };
 		7439182E1DC04B8900FCA6C6 /* GCDMulticastDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 743918261DC04B8900FCA6C6 /* GCDMulticastDelegate.m */; };
 		7439182F1DC04B8900FCA6C6 /* XBJsonKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 743918291DC04B8900FCA6C6 /* XBJsonKit.m */; };
@@ -58,6 +59,8 @@
 		7406EA731D6BFD28007808BB /* XBUtilsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XBUtilsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7406EA771D6BFD28007808BB /* XBUtilsUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XBUtilsUITests.m; sourceTree = "<group>"; };
 		7406EA791D6BFD28007808BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		741C01A41DFA897A00A79871 /* NSURL+ParameterParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURL+ParameterParser.h"; sourceTree = "<group>"; };
+		741C01A51DFA897A00A79871 /* NSURL+ParameterParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURL+ParameterParser.m"; sourceTree = "<group>"; };
 		743918221DC04B8900FCA6C6 /* UIView+XBAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+XBAdd.h"; sourceTree = "<group>"; };
 		743918231DC04B8900FCA6C6 /* UIView+XBAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+XBAdd.m"; sourceTree = "<group>"; };
 		743918251DC04B8900FCA6C6 /* GCDMulticastDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDMulticastDelegate.h; sourceTree = "<group>"; };
@@ -217,6 +220,8 @@
 		743918311DC04C0000FCA6C6 /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
+				741C01A41DFA897A00A79871 /* NSURL+ParameterParser.h */,
+				741C01A51DFA897A00A79871 /* NSURL+ParameterParser.m */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -382,6 +387,7 @@
 				743918351DC04EED00FCA6C6 /* NSString+XBAppVersion.m in Sources */,
 				743918381DC053EC00FCA6C6 /* XBAppVersion.m in Sources */,
 				7439182E1DC04B8900FCA6C6 /* GCDMulticastDelegate.m in Sources */,
+				741C01A61DFA897A00A79871 /* NSURL+ParameterParser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

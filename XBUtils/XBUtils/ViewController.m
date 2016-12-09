@@ -82,6 +82,8 @@
     NSLog(@"current app version lessThan 1.10.0: %@", @([XBAppVersion lessThan:@"1.10.0"]));
     NSLog(@"current app version same 1.0: %@", @([XBAppVersion same:@"1.0"]));
     NSLog(@"current app version lessThan 1.a: %@", @([currentAppVersion xb_lessThan:@"1.a"]));
+    NSLog(@"current app version greaterThan '': %@", @([XBAppVersion greaterThan:@""]));
+    NSLog(@"current app version lessThan ' ': %@", @([currentAppVersion xb_lessThan:@" "]));
     
     NSString *infoPath = [[NSBundle mainBundle] pathForResource:@"Info" ofType:@"plist"];
     NSString *md5 = [XBFileHash md5HashOfFileAtPath:infoPath];
