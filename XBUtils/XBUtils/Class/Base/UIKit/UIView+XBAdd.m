@@ -165,117 +165,117 @@
     return rect;
 }
 
-- (CGFloat)left {
+- (CGFloat)xb_left {
     return self.frame.origin.x;
 }
 
-- (void)setLeft:(CGFloat)x {
+- (void)setXb_left:(CGFloat)x {
     CGRect frame = self.frame;
     frame.origin.x = x;
     self.frame = frame;
 }
 
-- (CGFloat)top {
+- (CGFloat)xb_top {
     return self.frame.origin.y;
 }
 
-- (void)setTop:(CGFloat)y {
+- (void)setXb_top:(CGFloat)y {
     CGRect frame = self.frame;
     frame.origin.y = y;
     self.frame = frame;
 }
 
-- (CGFloat)right {
+- (CGFloat)xb_right {
     return self.frame.origin.x + self.frame.size.width;
 }
 
-- (void)setRight:(CGFloat)right {
+- (void)setXb_right:(CGFloat)right {
     CGRect frame = self.frame;
     frame.origin.x = right - frame.size.width;
     self.frame = frame;
 }
 
-- (CGFloat)relativeRight {
+- (CGFloat)xb_relativeRight {
     return CGRectGetMaxX(self.frame);
 }
 
-- (void)setRelativeRight:(CGFloat)relativeRight {
+- (void)setXb_relativeRight:(CGFloat)relativeRight {
     CGRect frame = self.frame;
     frame.size.width = relativeRight - frame.origin.x;
     self.frame = frame;
 }
 
-- (CGFloat)bottom {
+- (CGFloat)xb_bottom {
     return self.frame.origin.y + self.frame.size.height;
 }
 
-- (void)setBottom:(CGFloat)bottom {
+- (void)setXb_bottom:(CGFloat)bottom {
     CGRect frame = self.frame;
     frame.origin.y = bottom - frame.size.height;
     self.frame = frame;
 }
 
-- (CGFloat)relativeBottom {
+- (CGFloat)xb_relativeBottom {
     return CGRectGetMaxY(self.frame);
 }
 
-- (void)setRelativeBottom:(CGFloat)relativeBottom {
+- (void)setXb_relativeBottom:(CGFloat)relativeBottom {
     CGRect frame = self.frame;
     frame.size.height = relativeBottom - frame.origin.y;
     self.frame = frame;
 }
 
-- (CGFloat)width {
+- (CGFloat)xb_width {
     return self.frame.size.width;
 }
 
-- (void)setWidth:(CGFloat)width {
+- (void)setXb_width:(CGFloat)width {
     CGRect frame = self.frame;
     frame.size.width = width;
     self.frame = frame;
 }
 
-- (CGFloat)height {
+- (CGFloat)xb_height {
     return self.frame.size.height;
 }
 
-- (void)setHeight:(CGFloat)height {
+- (void)setXb_height:(CGFloat)height {
     CGRect frame = self.frame;
     frame.size.height = height;
     self.frame = frame;
 }
 
-- (CGFloat)centerX {
+- (CGFloat)xb_centerX {
     return self.center.x;
 }
 
-- (void)setCenterX:(CGFloat)centerX {
+- (void)setXb_centerX:(CGFloat)centerX {
     self.center = CGPointMake(centerX, self.center.y);
 }
 
-- (CGFloat)centerY {
+- (CGFloat)xb_centerY {
     return self.center.y;
 }
 
-- (void)setCenterY:(CGFloat)centerY {
+- (void)setXb_centerY:(CGFloat)centerY {
     self.center = CGPointMake(self.center.x, centerY);
 }
 
-- (CGPoint)origin {
+- (CGPoint)xb_origin {
     return self.frame.origin;
 }
 
-- (void)setOrigin:(CGPoint)origin {
+- (void)setXb_origin:(CGPoint)origin {
     CGRect frame = self.frame;
     frame.origin = origin;
     self.frame = frame;
 }
 
-- (CGSize)size {
+- (CGSize)xb_size {
     return self.frame.size;
 }
 
-- (void)setSize:(CGSize)size {
+- (void)setXb_size:(CGSize)size {
     CGRect frame = self.frame;
     frame.size = size;
     self.frame = frame;

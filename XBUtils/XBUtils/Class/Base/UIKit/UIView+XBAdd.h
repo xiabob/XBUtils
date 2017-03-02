@@ -95,18 +95,18 @@
 - (CGRect)convertRect:(CGRect)rect fromViewOrWindow:(nullable UIView *)view;
 
 
-@property (nonatomic) CGFloat left;             ///< Shortcut for frame.origin.x.
-@property (nonatomic) CGFloat top;              ///< Shortcut for frame.origin.y
-@property (nonatomic) CGFloat right;            ///< Shortcut for frame.origin.x + frame.size.width
-@property (nonatomic) CGFloat relativeRight;    ///< getter = right, but setter is set width(you should set left first)
-@property (nonatomic) CGFloat bottom;           ///< Shortcut for frame.origin.y + frame.size.height
-@property (nonatomic) CGFloat relativeBottom;   ///< getter = bottom, but setter is set height(you should set top first)
-@property (nonatomic) CGFloat width;            ///< Shortcut for frame.size.width.
-@property (nonatomic) CGFloat height;           ///< Shortcut for frame.size.height.
-@property (nonatomic) CGFloat centerX;          ///< Shortcut for center.x
-@property (nonatomic) CGFloat centerY;          ///< Shortcut for center.y
-@property (nonatomic) CGPoint origin;           ///< Shortcut for frame.origin.
-@property (nonatomic) CGSize  size;             ///< Shortcut for frame.size.
+@property (nonatomic) CGFloat xb_left;             ///< Shortcut for frame.origin.x.
+@property (nonatomic) CGFloat xb_top;              ///< Shortcut for frame.origin.y
+@property (nonatomic) CGFloat xb_right;            ///< Shortcut for frame.origin.x + frame.size.width
+@property (nonatomic) CGFloat xb_relativeRight;    ///< getter = right, but setter is set width(you should set left first)
+@property (nonatomic) CGFloat xb_bottom;           ///< Shortcut for frame.origin.y + frame.size.height
+@property (nonatomic) CGFloat xb_relativeBottom;   ///< getter = bottom, but setter is set height(you should set top first)
+@property (nonatomic) CGFloat xb_width;            ///< Shortcut for frame.size.width.
+@property (nonatomic) CGFloat xb_height;           ///< Shortcut for frame.size.height.
+@property (nonatomic) CGFloat xb_centerX;          ///< Shortcut for center.x
+@property (nonatomic) CGFloat xb_centerY;          ///< Shortcut for center.y
+@property (nonatomic) CGPoint xb_origin;           ///< Shortcut for frame.origin.
+@property (nonatomic) CGSize  xb_size;             ///< Shortcut for frame.size.
 
 
 @end
