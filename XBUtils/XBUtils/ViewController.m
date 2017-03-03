@@ -64,7 +64,7 @@
     NSArray *test1 = @[@"1", @"haha", @"天"];
     NSLog(@"test1:\n%@", [test1 jsonRepresentation]);
     
-    NSDictionary *test2 = @{@"name": @"haha", @"age": @"12", @"date":@[@"2015", @"12"]};
+    NSDictionary *test2 = @{@"name": @"haha", @"age": [NSNull null], @"date":@[@"2015", @"12"]};
     NSLog(@"test2:\n%@", [test2 jsonRepresentation]);
     
     NSString *test3 = [test2 jsonRepresentation];
@@ -90,6 +90,15 @@
     NSString *sha1Hash = [XBFileHash sha1HashOfFileAtPath:infoPath];
     NSString *sha512Hash = [XBFileHash sha512HashOfFileAtPath:infoPath];
     NSLog(@"md5:%@\nsha1Hash:%@\nsha512Hash:%@", md5, sha1Hash, sha512Hash);
+    
+    id object = [NSNull null];
+    [object length]; // not crash
+    
+    NSNumber *age1 = [[test3 jsonValue] objectForKey:@"age"];
+    NSLog(@"age1 is null:%@", @([age1 isKindOfClass:[NSNull class]]));
+    
+    NSNumber *age2 = Macro_RemoveNull([[test3 jsonValue] objectForKey:@"age"]);
+    NSLog(@"age2 is nil:%@", @(age2 == nil));
 }
 
 

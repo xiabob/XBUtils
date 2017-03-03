@@ -16,5 +16,7 @@
 #import "XBJsonKit.h"
 #import "XBAppVersion.h"
 #import "XBFileHash.h"
+#import "NSURL+ParameterParser.h"
+#import "NSNull+Safe.h"
 
 #endif /* XBUtils_h */

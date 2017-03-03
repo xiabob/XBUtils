@@ -24,6 +24,7 @@
 		743918351DC04EED00FCA6C6 /* NSString+XBAppVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = 743918341DC04EED00FCA6C6 /* NSString+XBAppVersion.m */; };
 		743918381DC053EC00FCA6C6 /* XBAppVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = 743918371DC053EC00FCA6C6 /* XBAppVersion.m */; };
 		744FA91A1E69028B002B49B8 /* UIView+CornerRadius.m in Sources */ = {isa = PBXBuildFile; fileRef = 744FA9191E69028B002B49B8 /* UIView+CornerRadius.m */; };
+		744FA92A1E6960D9002B49B8 /* NSNull+Safe.m in Sources */ = {isa = PBXBuildFile; fileRef = 744FA9291E6960D9002B49B8 /* NSNull+Safe.m */; };
 		74723ABD1DC6E4BC00509AB8 /* XBFileHash.m in Sources */ = {isa = PBXBuildFile; fileRef = 74723ABC1DC6E4BC00509AB8 /* XBFileHash.m */; };
 		74BD7E011E6800FE0001FFF5 /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 74BD7E001E6800FE0001FFF5 /* UIImage+ImageEffects.m */; };
 /* End PBXBuildFile section */
@@ -81,6 +82,8 @@
 		743918371DC053EC00FCA6C6 /* XBAppVersion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XBAppVersion.m; sourceTree = "<group>"; };
 		744FA9181E69028B002B49B8 /* UIView+CornerRadius.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+CornerRadius.h"; sourceTree = "<group>"; };
 		744FA9191E69028B002B49B8 /* UIView+CornerRadius.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+CornerRadius.m"; sourceTree = "<group>"; };
+		744FA9281E6960D9002B49B8 /* NSNull+Safe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNull+Safe.h"; sourceTree = "<group>"; };
+		744FA9291E6960D9002B49B8 /* NSNull+Safe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNull+Safe.m"; sourceTree = "<group>"; };
 		74723ABB1DC6E4BC00509AB8 /* XBFileHash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XBFileHash.h; sourceTree = "<group>"; };
 		74723ABC1DC6E4BC00509AB8 /* XBFileHash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XBFileHash.m; sourceTree = "<group>"; };
 		74BD7DFF1E6800FE0001FFF5 /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageEffects.h"; sourceTree = "<group>"; };
@@ -234,6 +237,8 @@
 			children = (
 				741C01A41DFA897A00A79871 /* NSURL+ParameterParser.h */,
 				741C01A51DFA897A00A79871 /* NSURL+ParameterParser.m */,
+				744FA9281E6960D9002B49B8 /* NSNull+Safe.h */,
+				744FA9291E6960D9002B49B8 /* NSNull+Safe.m */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -400,6 +405,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				744FA92A1E6960D9002B49B8 /* NSNull+Safe.m in Sources */,
 				7439182D1DC04B8900FCA6C6 /* UIView+XBAdd.m in Sources */,
 				74BD7E011E6800FE0001FFF5 /* UIImage+ImageEffects.m in Sources */,
 				74723ABD1DC6E4BC00509AB8 /* XBFileHash.m in Sources */,
