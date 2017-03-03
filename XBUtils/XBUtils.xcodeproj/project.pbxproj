@@ -23,6 +23,7 @@
 		743918301DC04B8900FCA6C6 /* XBWeakProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7439182B1DC04B8900FCA6C6 /* XBWeakProxy.m */; };
 		743918351DC04EED00FCA6C6 /* NSString+XBAppVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = 743918341DC04EED00FCA6C6 /* NSString+XBAppVersion.m */; };
 		743918381DC053EC00FCA6C6 /* XBAppVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = 743918371DC053EC00FCA6C6 /* XBAppVersion.m */; };
+		744FA91A1E69028B002B49B8 /* UIView+CornerRadius.m in Sources */ = {isa = PBXBuildFile; fileRef = 744FA9191E69028B002B49B8 /* UIView+CornerRadius.m */; };
 		74723ABD1DC6E4BC00509AB8 /* XBFileHash.m in Sources */ = {isa = PBXBuildFile; fileRef = 74723ABC1DC6E4BC00509AB8 /* XBFileHash.m */; };
 		74BD7E011E6800FE0001FFF5 /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 74BD7E001E6800FE0001FFF5 /* UIImage+ImageEffects.m */; };
 /* End PBXBuildFile section */
@@ -78,6 +79,8 @@
 		743918341DC04EED00FCA6C6 /* NSString+XBAppVersion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+XBAppVersion.m"; sourceTree = "<group>"; };
 		743918361DC053EC00FCA6C6 /* XBAppVersion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XBAppVersion.h; sourceTree = "<group>"; };
 		743918371DC053EC00FCA6C6 /* XBAppVersion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XBAppVersion.m; sourceTree = "<group>"; };
+		744FA9181E69028B002B49B8 /* UIView+CornerRadius.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+CornerRadius.h"; sourceTree = "<group>"; };
+		744FA9191E69028B002B49B8 /* UIView+CornerRadius.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+CornerRadius.m"; sourceTree = "<group>"; };
 		74723ABB1DC6E4BC00509AB8 /* XBFileHash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XBFileHash.h; sourceTree = "<group>"; };
 		74723ABC1DC6E4BC00509AB8 /* XBFileHash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XBFileHash.m; sourceTree = "<group>"; };
 		74BD7DFF1E6800FE0001FFF5 /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageEffects.h"; sourceTree = "<group>"; };
@@ -194,10 +197,9 @@
 		743918211DC04B8900FCA6C6 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				744FA91B1E690290002B49B8 /* UIView */,
 				74BD7DFF1E6800FE0001FFF5 /* UIImage+ImageEffects.h */,
 				74BD7E001E6800FE0001FFF5 /* UIImage+ImageEffects.m */,
-				743918221DC04B8900FCA6C6 /* UIView+XBAdd.h */,
-				743918231DC04B8900FCA6C6 /* UIView+XBAdd.m */,
 				741BC14E1E2363AC0056F5B2 /* UIButton+XBPosition.h */,
 				741BC14F1E2363AC0056F5B2 /* UIButton+XBPosition.m */,
 			);
@@ -245,6 +247,17 @@
 				743918371DC053EC00FCA6C6 /* XBAppVersion.m */,
 			);
 			path = AppVersionKit;
+			sourceTree = "<group>";
+		};
+		744FA91B1E690290002B49B8 /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				743918221DC04B8900FCA6C6 /* UIView+XBAdd.h */,
+				743918231DC04B8900FCA6C6 /* UIView+XBAdd.m */,
+				744FA9181E69028B002B49B8 /* UIView+CornerRadius.h */,
+				744FA9191E69028B002B49B8 /* UIView+CornerRadius.m */,
+			);
+			name = UIView;
 			sourceTree = "<group>";
 		};
 		74723ABA1DC6E4A000509AB8 /* XBFileMD5Hash */ = {
@@ -398,6 +411,7 @@
 				7439182F1DC04B8900FCA6C6 /* XBJsonKit.m in Sources */,
 				743918351DC04EED00FCA6C6 /* NSString+XBAppVersion.m in Sources */,
 				743918381DC053EC00FCA6C6 /* XBAppVersion.m in Sources */,
+				744FA91A1E69028B002B49B8 /* UIView+CornerRadius.m in Sources */,
 				7439182E1DC04B8900FCA6C6 /* GCDMulticastDelegate.m in Sources */,
 				741C01A61DFA897A00A79871 /* NSURL+ParameterParser.m in Sources */,
 			);
