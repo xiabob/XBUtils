@@ -18,5 +18,7 @@
 #import "XBFileHash.h"
 #import "NSURL+ParameterParser.h"
 #import "NSNull+Safe.h"
+#import "NSString+Hashes.h"
+#import "NSString+DeviceHelper.h"
 
 #endif /* XBUtils_h */

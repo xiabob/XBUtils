@@ -99,6 +99,9 @@
     
     NSNumber *age2 = Macro_RemoveNull([[test3 jsonValue] objectForKey:@"age"]);
     NSLog(@"age2 is nil:%@", @(age2 == nil));
+    
+    
+    NSLog(@"ipv4:%@", [NSString ipv4Address]);
 }
 
 
