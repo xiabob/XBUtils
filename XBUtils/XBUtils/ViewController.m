@@ -102,6 +102,7 @@
     
     
     NSLog(@"ipv4:%@", [NSString ipv4Address]);
+    NSLog(@"system name:%@", [NSString systemUserName]);
 }
 
 
