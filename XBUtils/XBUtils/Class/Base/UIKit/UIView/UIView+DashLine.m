@@ -10,7 +10,11 @@
 
 @implementation UIView (DashLine)
 
-- (void)drawDashLineWithDashLength:(CGFloat)dashLength dashSpacing:(CGFloat)dashSpacing dashColor:(UIColor *)lineColor {
+- (void)drawDashLineWithDashLength:(CGFloat)dashLength dashSpacing:(CGFloat)dashSpacing dashColor:(UIColor *)dashColor {
+    [self drawDashLineWithDashLength:dashLength dashSpacing:dashSpacing dashColor:dashColor lineCap:kCALineCapRound];
+}
+
+- (void)drawDashLineWithDashLength:(CGFloat)dashLength dashSpacing:(CGFloat)dashSpacing dashColor:(UIColor *)dashColor lineCap:(NSString *)lineCap {
     if ([[self layer] sublayers].count > 0) {
         for (CALayer *layer in [[self layer] sublayers]) {
             [layer removeFromSuperlayer];
@@ -23,9 +27,9 @@
     [shapeLayer setBounds:self.bounds];
     [shapeLayer setPosition:CGPointMake(CGRectGetWidth(self.frame) / 2, CGRectGetHeight(self.frame) / 2)];
     [shapeLayer setFillColor:[UIColor clearColor].CGColor];
-    [shapeLayer setStrokeColor:lineColor.CGColor];
+    [shapeLayer setStrokeColor:dashColor.CGColor];
     [shapeLayer setLineWidth:lineWidth];
-    [shapeLayer setLineCap:kCALineCapRound];
+    [shapeLayer setLineCap:lineCap];
     [shapeLayer setLineDashPattern:[NSArray arrayWithObjects:[NSNumber numberWithInt:dashLength], [NSNumber numberWithInt:dashSpacing], nil]];
     
     CGMutablePathRef path = CGPathCreateMutable();
