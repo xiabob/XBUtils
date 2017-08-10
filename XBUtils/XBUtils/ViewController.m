@@ -106,8 +106,9 @@
     
     //
     NSString *value = [test1 xb_objectAtIndex:5];
+    NSLog(@"value:%@", value);
     NSMutableArray<NSNumber *> *testArray = [[NSMutableArray alloc] init];
-    [testArray xb_safeAddObject:@1];
+    [testArray xb_addObject:@1];
 }
 
 

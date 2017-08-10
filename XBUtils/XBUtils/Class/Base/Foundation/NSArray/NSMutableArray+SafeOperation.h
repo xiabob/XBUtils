@@ -10,10 +10,14 @@
 
 @interface NSMutableArray<ObjectType> (SafeOperation)
 
-- (void)xb_safeAddObject:(ObjectType)object;
+- (void)xb_addObject:(ObjectType)anObject;
 
-- (void)xb_safeInsertObject:(ObjectType)anObject atIndex:(NSUInteger)index;
+- (void)xb_insertObject:(ObjectType)anObject atIndex:(NSUInteger)index;
 
-- (void)xb_safeAddObjectsFromArray:(NSArray *)otherArray;
+- (void)xb_addObjectsFromArray:(NSArray *)otherArray;
+
+- (void)xb_removeObject:(id)anObject;
+
+- (void)xb_removeObjectAtIndex:(NSUInteger)index;
 
 @end
