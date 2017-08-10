@@ -8,11 +8,11 @@
 
 #import <Foundation/Foundation.h>
 
-@interface NSMutableArray (SafeOperation)
+@interface NSMutableArray<ObjectType> (SafeOperation)
 
-- (void)xb_safeAddObject:(id)object;
+- (void)xb_safeAddObject:(ObjectType)object;
 
-- (void)xb_safeInsertObject:(id)anObject atIndex:(NSUInteger)index;
+- (void)xb_safeInsertObject:(ObjectType)anObject atIndex:(NSUInteger)index;
 
 - (void)xb_safeAddObjectsFromArray:(NSArray *)otherArray;
 

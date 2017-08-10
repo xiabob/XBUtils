@@ -19,7 +19,7 @@
 - (void)xb_safeInsertObject:(id)anObject atIndex:(NSUInteger)index {
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored"-Wtautological-compare"
-    if (anObject && index >= 0) {
+    if (anObject && index >= 0 && index <= self.count) {
         [self insertObject:anObject atIndex:index];
     }
 #pragma clang diagnostic pop

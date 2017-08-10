@@ -103,6 +103,11 @@
     
     NSLog(@"ipv4:%@", [NSString ipv4Address]);
     NSLog(@"system name:%@", [NSString systemUserName]);
+    
+    //
+    NSString *value = [test1 xb_objectAtIndex:5];
+    NSMutableArray<NSNumber *> *testArray = [[NSMutableArray alloc] init];
+    [testArray xb_safeAddObject:@1];
 }
 
 
