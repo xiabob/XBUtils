@@ -21,7 +21,6 @@
 		742239C01F271E2E00006908 /* UIView+XBAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 742239BD1F271E2E00006908 /* UIView+XBAdd.m */; };
 		7439182E1DC04B8900FCA6C6 /* GCDMulticastDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 743918261DC04B8900FCA6C6 /* GCDMulticastDelegate.m */; };
 		7439182F1DC04B8900FCA6C6 /* XBJsonKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 743918291DC04B8900FCA6C6 /* XBJsonKit.m */; };
-		743918301DC04B8900FCA6C6 /* XBWeakProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7439182B1DC04B8900FCA6C6 /* XBWeakProxy.m */; };
 		743918351DC04EED00FCA6C6 /* NSString+XBAppVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = 743918341DC04EED00FCA6C6 /* NSString+XBAppVersion.m */; };
 		743918381DC053EC00FCA6C6 /* XBAppVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = 743918371DC053EC00FCA6C6 /* XBAppVersion.m */; };
 		7439C6351EBC8009003C6C64 /* NSNull+Safe.m in Sources */ = {isa = PBXBuildFile; fileRef = 7439C6311EBC8009003C6C64 /* NSNull+Safe.m */; };
@@ -33,6 +32,8 @@
 		74723ABD1DC6E4BC00509AB8 /* XBFileHash.m in Sources */ = {isa = PBXBuildFile; fileRef = 74723ABC1DC6E4BC00509AB8 /* XBFileHash.m */; };
 		7474AD161F316FAE0040D241 /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 7474AD151F316FAE0040D241 /* UIImage+ImageEffects.m */; };
 		7474AD191F3171910040D241 /* UIImage+XBAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 7474AD181F3171910040D241 /* UIImage+XBAdd.m */; };
+		747BFEB41F6B784000D640E3 /* XBWeakProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 747BFEB31F6B784000D640E3 /* XBWeakProxy.m */; };
+		747BFEB71F6B785F00D640E3 /* XBCountdownTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 747BFEB61F6B785F00D640E3 /* XBCountdownTimer.m */; };
 		74EDE3E81EA8B827001C3E00 /* NSString+Hashes.m in Sources */ = {isa = PBXBuildFile; fileRef = 74EDE3E71EA8B827001C3E00 /* NSString+Hashes.m */; };
 		74EDE3EB1EA8BAC0001C3E00 /* NSString+DeviceHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 74EDE3EA1EA8BAC0001C3E00 /* NSString+DeviceHelper.m */; };
 		74F5E20C1EA99F7400F29E62 /* NSString+Size.m in Sources */ = {isa = PBXBuildFile; fileRef = 74F5E20B1EA99F7400F29E62 /* NSString+Size.m */; };
@@ -85,8 +86,6 @@
 		743918261DC04B8900FCA6C6 /* GCDMulticastDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDMulticastDelegate.m; sourceTree = "<group>"; };
 		743918281DC04B8900FCA6C6 /* XBJsonKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XBJsonKit.h; sourceTree = "<group>"; };
 		743918291DC04B8900FCA6C6 /* XBJsonKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XBJsonKit.m; sourceTree = "<group>"; };
-		7439182A1DC04B8900FCA6C6 /* XBWeakProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XBWeakProxy.h; sourceTree = "<group>"; };
-		7439182B1DC04B8900FCA6C6 /* XBWeakProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XBWeakProxy.m; sourceTree = "<group>"; };
 		7439182C1DC04B8900FCA6C6 /* XBUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XBUtils.h; sourceTree = "<group>"; };
 		743918331DC04EED00FCA6C6 /* NSString+XBAppVersion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+XBAppVersion.h"; sourceTree = "<group>"; };
 		743918341DC04EED00FCA6C6 /* NSString+XBAppVersion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+XBAppVersion.m"; sourceTree = "<group>"; };
@@ -110,6 +109,10 @@
 		7474AD151F316FAE0040D241 /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageEffects.m"; sourceTree = "<group>"; };
 		7474AD171F3171910040D241 /* UIImage+XBAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+XBAdd.h"; sourceTree = "<group>"; };
 		7474AD181F3171910040D241 /* UIImage+XBAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+XBAdd.m"; sourceTree = "<group>"; };
+		747BFEB21F6B784000D640E3 /* XBWeakProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XBWeakProxy.h; sourceTree = "<group>"; };
+		747BFEB31F6B784000D640E3 /* XBWeakProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XBWeakProxy.m; sourceTree = "<group>"; };
+		747BFEB51F6B785F00D640E3 /* XBCountdownTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XBCountdownTimer.h; sourceTree = "<group>"; };
+		747BFEB61F6B785F00D640E3 /* XBCountdownTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XBCountdownTimer.m; sourceTree = "<group>"; };
 		74EDE3E61EA8B827001C3E00 /* NSString+Hashes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Hashes.h"; sourceTree = "<group>"; };
 		74EDE3E71EA8B827001C3E00 /* NSString+Hashes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Hashes.m"; sourceTree = "<group>"; };
 		74EDE3E91EA8BAC0001C3E00 /* NSString+DeviceHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+DeviceHelper.h"; sourceTree = "<group>"; };
@@ -254,13 +257,13 @@
 		743918241DC04B8900FCA6C6 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				747BFEB01F6B784000D640E3 /* XBCountdownTimer */,
+				747BFEB11F6B784000D640E3 /* XBWeakProxy */,
 				74723ABA1DC6E4A000509AB8 /* XBFileMD5Hash */,
 				743918271DC04B8900FCA6C6 /* XBJsonKit */,
 				743918321DC04E8600FCA6C6 /* AppVersionKit */,
 				743918251DC04B8900FCA6C6 /* GCDMulticastDelegate.h */,
 				743918261DC04B8900FCA6C6 /* GCDMulticastDelegate.m */,
-				7439182A1DC04B8900FCA6C6 /* XBWeakProxy.h */,
-				7439182B1DC04B8900FCA6C6 /* XBWeakProxy.m */,
 				74FFF5051ECBFF7300B09B2B /* XBDispatchHelper.h */,
 				74FFF5061ECBFF7300B09B2B /* XBDispatchHelper.m */,
 			);
@@ -347,6 +350,24 @@
 				7474AD181F3171910040D241 /* UIImage+XBAdd.m */,
 			);
 			path = UIImage;
+			sourceTree = "<group>";
+		};
+		747BFEB01F6B784000D640E3 /* XBCountdownTimer */ = {
+			isa = PBXGroup;
+			children = (
+				747BFEB51F6B785F00D640E3 /* XBCountdownTimer.h */,
+				747BFEB61F6B785F00D640E3 /* XBCountdownTimer.m */,
+			);
+			path = XBCountdownTimer;
+			sourceTree = "<group>";
+		};
+		747BFEB11F6B784000D640E3 /* XBWeakProxy */ = {
+			isa = PBXGroup;
+			children = (
+				747BFEB21F6B784000D640E3 /* XBWeakProxy.h */,
+				747BFEB31F6B784000D640E3 /* XBWeakProxy.m */,
+			);
+			path = XBWeakProxy;
 			sourceTree = "<group>";
 		};
 		74EDE3E51EA8B7C8001C3E00 /* NSString */ = {
@@ -511,13 +532,14 @@
 				7439C63C1EBC8067003C6C64 /* NSArray+ImageNames.m in Sources */,
 				7406EA541D6BFD27007808BB /* main.m in Sources */,
 				74EDE3EB1EA8BAC0001C3E00 /* NSString+DeviceHelper.m in Sources */,
-				743918301DC04B8900FCA6C6 /* XBWeakProxy.m in Sources */,
 				7439C6391EBC8029003C6C64 /* NSMutableArray+SafeOperation.m in Sources */,
 				7439182F1DC04B8900FCA6C6 /* XBJsonKit.m in Sources */,
 				743918351DC04EED00FCA6C6 /* NSString+XBAppVersion.m in Sources */,
 				74EDE3E81EA8B827001C3E00 /* NSString+Hashes.m in Sources */,
 				743918381DC053EC00FCA6C6 /* XBAppVersion.m in Sources */,
 				744DCD8F1F3C507600EAF5EC /* NSArray+SafeOperation.m in Sources */,
+				747BFEB41F6B784000D640E3 /* XBWeakProxy.m in Sources */,
+				747BFEB71F6B785F00D640E3 /* XBCountdownTimer.m in Sources */,
 				742239BF1F271E2E00006908 /* UIView+DashLine.m in Sources */,
 				7439182E1DC04B8900FCA6C6 /* GCDMulticastDelegate.m in Sources */,
 			);

@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "XBUtils.h"
 
+
 @protocol TestProtocal <NSObject>
 
 - (void)test;
@@ -40,7 +41,7 @@
 
 @end
 
-@interface ViewController ()<TestProtocal>
+@interface ViewController ()<TestProtocal, XBCountdownTimerDelegate>
 
 @property (nonatomic, strong) TestView *myView;
 
@@ -109,12 +110,20 @@
     NSLog(@"value:%@", value);
     NSMutableArray<NSNumber *> *testArray = [[NSMutableArray alloc] init];
     [testArray xb_addObject:@1];
+    
+    [self xb_startObserverTimer];
 }
 
 
 //MARK: - TestProtocal
 - (void)test {
     NSLog(@"TestProtocal:test");
+}
+
+#pragma mark - XBCountdownTimerDelegate
+
+- (void)timerDidTickDown:(XBCountdownTimer *)timer {
+    NSLog(@">>>>>>>>>>>>>>>>");
 }
 
 - (void)didReceiveMemoryWarning {

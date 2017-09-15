@@ -17,6 +17,7 @@
 #import "XBAppVersion.h"
 #import "XBFileHash.h"
 #import "XBDispatchHelper.h"
+#import "XBCountdownTimer.h"
 
 #import "NSURL+ParameterParser.h"
 #import "NSNull+Safe.h"
