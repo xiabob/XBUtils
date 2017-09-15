@@ -113,6 +113,7 @@
 		747BFEB31F6B784000D640E3 /* XBWeakProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XBWeakProxy.m; sourceTree = "<group>"; };
 		747BFEB51F6B785F00D640E3 /* XBCountdownTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XBCountdownTimer.h; sourceTree = "<group>"; };
 		747BFEB61F6B785F00D640E3 /* XBCountdownTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XBCountdownTimer.m; sourceTree = "<group>"; };
+		747BFEB91F6BAA4800D640E3 /* XBMacrosHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XBMacrosHeader.h; sourceTree = "<group>"; };
 		74EDE3E61EA8B827001C3E00 /* NSString+Hashes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Hashes.h"; sourceTree = "<group>"; };
 		74EDE3E71EA8B827001C3E00 /* NSString+Hashes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Hashes.m"; sourceTree = "<group>"; };
 		74EDE3E91EA8BAC0001C3E00 /* NSString+DeviceHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+DeviceHelper.h"; sourceTree = "<group>"; };
@@ -227,6 +228,7 @@
 		7439181F1DC04B8900FCA6C6 /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				747BFEB81F6BAA1900D640E3 /* Header */,
 				743918201DC04B8900FCA6C6 /* Base */,
 				743918241DC04B8900FCA6C6 /* Utility */,
 				7439182C1DC04B8900FCA6C6 /* XBUtils.h */,
@@ -368,6 +370,14 @@
 				747BFEB31F6B784000D640E3 /* XBWeakProxy.m */,
 			);
 			path = XBWeakProxy;
+			sourceTree = "<group>";
+		};
+		747BFEB81F6BAA1900D640E3 /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				747BFEB91F6BAA4800D640E3 /* XBMacrosHeader.h */,
+			);
+			path = Header;
 			sourceTree = "<group>";
 		};
 		74EDE3E51EA8B7C8001C3E00 /* NSString */ = {
