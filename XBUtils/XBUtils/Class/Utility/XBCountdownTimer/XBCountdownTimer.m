@@ -117,7 +117,8 @@
 }
 
 - (void)tickDown {
-    for (id<XBCountdownTimerDelegate> observer in self.observers) {
+    NSHashTable *observers = [self.observers copy];
+    for (id<XBCountdownTimerDelegate> observer in observers) {
         if ([observer respondsToSelector:@selector(timerDidTickDown:)]) {
             [observer timerDidTickDown:self];
         }
