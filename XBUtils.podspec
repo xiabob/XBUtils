@@ -7,6 +7,5 @@ Pod::Spec.new do |s|
   s.source_files = 'XBUtils/XBUtils/Class/*.{h.m}'
   s.requires_arc = true
   s.platform     = :ios, '8.0'
-  s.ios.deployment_target = '8.0'
 
 end
