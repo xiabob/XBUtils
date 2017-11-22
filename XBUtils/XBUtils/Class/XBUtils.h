@@ -27,4 +27,7 @@
 #import "NSArray+ImageNames.h"
 #import "NSArray+SafeOperation.h"
 
+
+#import "UIButton+XBPosition.h"
+
 #endif /* XBUtils_h */
