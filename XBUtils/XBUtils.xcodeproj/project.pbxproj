@@ -17,6 +17,7 @@
 		7406EA781D6BFD28007808BB /* XBUtilsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7406EA771D6BFD28007808BB /* XBUtilsUITests.m */; };
 		740E7C5B1FC54C01007B7237 /* UIButton+XBPosition.m in Sources */ = {isa = PBXBuildFile; fileRef = 740E7C5A1FC54C01007B7237 /* UIButton+XBPosition.m */; };
 		740E7C5E1FC54C60007B7237 /* UIButton+TouchAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 740E7C5D1FC54C60007B7237 /* UIButton+TouchAnimation.m */; };
+		741D2C391FEBCAD900428662 /* NSString+HexColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 741D2C381FEBCAD900428662 /* NSString+HexColor.m */; };
 		742239BE1F271E2E00006908 /* UIView+CornerRadius.m in Sources */ = {isa = PBXBuildFile; fileRef = 742239B91F271E2E00006908 /* UIView+CornerRadius.m */; };
 		742239BF1F271E2E00006908 /* UIView+DashLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 742239BB1F271E2E00006908 /* UIView+DashLine.m */; };
 		742239C01F271E2E00006908 /* UIView+XBAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 742239BD1F271E2E00006908 /* UIView+XBAdd.m */; };
@@ -80,6 +81,8 @@
 		740E7C5A1FC54C01007B7237 /* UIButton+XBPosition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+XBPosition.m"; sourceTree = "<group>"; };
 		740E7C5C1FC54C60007B7237 /* UIButton+TouchAnimation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+TouchAnimation.h"; sourceTree = "<group>"; };
 		740E7C5D1FC54C60007B7237 /* UIButton+TouchAnimation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+TouchAnimation.m"; sourceTree = "<group>"; };
+		741D2C371FEBCAD900428662 /* NSString+HexColor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+HexColor.h"; sourceTree = "<group>"; };
+		741D2C381FEBCAD900428662 /* NSString+HexColor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+HexColor.m"; sourceTree = "<group>"; };
 		742239B81F271E2E00006908 /* UIView+CornerRadius.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+CornerRadius.h"; sourceTree = "<group>"; };
 		742239B91F271E2E00006908 /* UIView+CornerRadius.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+CornerRadius.m"; sourceTree = "<group>"; };
 		742239BA1F271E2E00006908 /* UIView+DashLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+DashLine.h"; sourceTree = "<group>"; };
@@ -417,6 +420,8 @@
 				74F5E20B1EA99F7400F29E62 /* NSString+Size.m */,
 				7445D5E41F4C28D40007FEAB /* NSAttributedString+Size.h */,
 				7445D5E51F4C28D40007FEAB /* NSAttributedString+Size.m */,
+				741D2C371FEBCAD900428662 /* NSString+HexColor.h */,
+				741D2C381FEBCAD900428662 /* NSString+HexColor.m */,
 			);
 			path = NSString;
 			sourceTree = "<group>";
@@ -576,6 +581,7 @@
 				743918381DC053EC00FCA6C6 /* XBAppVersion.m in Sources */,
 				744DCD8F1F3C507600EAF5EC /* NSArray+SafeOperation.m in Sources */,
 				747BFEB41F6B784000D640E3 /* XBWeakProxy.m in Sources */,
+				741D2C391FEBCAD900428662 /* NSString+HexColor.m in Sources */,
 				740E7C5B1FC54C01007B7237 /* UIButton+XBPosition.m in Sources */,
 				747BFEB71F6B785F00D640E3 /* XBCountdownTimer.m in Sources */,
 				742239BF1F271E2E00006908 /* UIView+DashLine.m in Sources */,
