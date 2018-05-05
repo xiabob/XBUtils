@@ -75,7 +75,7 @@
     [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
-- (void)applicationWillEnterForeground:(NSNotification *)notification {
+- (void)applicationDidBecomeActive:(NSNotification *)notification {
     [self restartTimer];
 }
 
@@ -102,11 +102,8 @@
 
 - (void)restartTimer {
     [self.timer invalidate];
-    __weak typeof(self) weakSelf = self;
-    self.timer = [NSTimer scheduledTimerWithTimeInterval:1.0 repeats:YES block:^(NSTimer * _Nonnull timer) {
-        __strong typeof(weakSelf) strongSelf = weakSelf;
-        [strongSelf tickDown];
-    }];
+
+    self.timer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(tickDown) userInfo:nil repeats:YES];
     [[NSRunLoop currentRunLoop] addTimer:self.timer forMode:NSRunLoopCommonModes];
 }
 
