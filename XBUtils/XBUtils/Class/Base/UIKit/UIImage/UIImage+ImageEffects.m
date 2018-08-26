@@ -275,21 +275,25 @@
 }
 
 - (UIImage *)rotateByDegrees:(CGFloat)degrees {
-  UIView *rotatedViewBox = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.size.width, self.size.height)];
-  CGAffineTransform t = CGAffineTransformMakeRotation(degrees * M_PI / 180.0f);
-  rotatedViewBox.transform = t;
-  CGSize rotatedSize = rotatedViewBox.frame.size;
-  
-  UIGraphicsBeginImageContext(rotatedSize);
-  CGContextRef bitmap = UIGraphicsGetCurrentContext();
-  CGContextTranslateCTM(bitmap, rotatedSize.width/2, rotatedSize.height/2);
-  CGContextRotateCTM(bitmap, degrees * M_PI / 180.0f);
-  CGContextScaleCTM(bitmap, 1.0, -1.0);
-  CGContextDrawImage(bitmap, CGRectMake(-self.size.width / 2, -self.size.height / 2, self.size.width, self.size.height), self.CGImage);
-  
-  UIImage *newImage = UIGraphicsGetImageFromCurrentImageContext();
-  UIGraphicsEndImageContext();
-  return newImage;
+    return [self rotateByDegrees:degrees opaque:NO];
+}
+
+- (UIImage *)rotateByDegrees:(CGFloat)degrees opaque:(BOOL)opaque {
+    UIView *rotatedViewBox = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.size.width, self.size.height)];
+    CGAffineTransform t = CGAffineTransformMakeRotation(degrees * M_PI / 180.0f);
+    rotatedViewBox.transform = t;
+    CGSize rotatedSize = rotatedViewBox.frame.size;
+    
+    UIGraphicsBeginImageContextWithOptions(rotatedSize, opaque, self.scale);
+    CGContextRef bitmap = UIGraphicsGetCurrentContext();
+    CGContextTranslateCTM(bitmap, rotatedSize.width/2, rotatedSize.height/2);
+    CGContextRotateCTM(bitmap, degrees * M_PI / 180.0f);
+    CGContextScaleCTM(bitmap, 1.0, -1.0);
+    CGContextDrawImage(bitmap, CGRectMake(-self.size.width / 2, -self.size.height / 2, self.size.width, self.size.height), self.CGImage);
+    
+    UIImage *newImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return newImage;
 }
 
 + (UIImage *)imagePixelFromColor:(UIColor *)color {

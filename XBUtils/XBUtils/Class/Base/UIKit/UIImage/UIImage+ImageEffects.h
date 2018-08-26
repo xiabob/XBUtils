@@ -106,6 +106,7 @@
 - (UIImage *)applyBlurWithRadius:(CGFloat)blurRadius tintColor:(UIColor *)tintColor saturationDeltaFactor:(CGFloat)saturationDeltaFactor maskImage:(UIImage *)maskImage;
 
 - (UIImage *)rotateByDegrees:(CGFloat)degrees;
+- (UIImage *)rotateByDegrees:(CGFloat)degrees opaque:(BOOL)opaque;
 
 + (UIImage *)imagePixelFromColor:(UIColor *)color;
 + (UIImage *)imageFromColor:(UIColor *)color withSize:(CGSize)size;
