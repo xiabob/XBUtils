@@ -9,6 +9,8 @@
 #ifndef XBUtils_h
 #define XBUtils_h
 
+#import "XBMacrosHeader.h"
+
 #import "XBDispatchHelper.h"
 #import "GCDQueue.h"
 
