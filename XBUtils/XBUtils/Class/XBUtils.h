@@ -38,6 +38,7 @@
 #import "NSString+DeviceHelper.h"
 #import "NSString+Size.h"
 #import "NSString+HexColor.h"
+#import "NSString+Url.h"
 #import "NSAttributedString+Size.h"
 
 #import "UIButton+XBPosition.h"

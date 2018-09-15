@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		16741419214CAACB00573F95 /* NSString+Url.m in Sources */ = {isa = PBXBuildFile; fileRef = 16741418214CAACB00573F95 /* NSString+Url.m */; };
 		7406EA541D6BFD27007808BB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7406EA531D6BFD27007808BB /* main.m */; };
 		7406EA571D6BFD28007808BB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7406EA561D6BFD28007808BB /* AppDelegate.m */; };
 		7406EA5A1D6BFD28007808BB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7406EA591D6BFD28007808BB /* ViewController.m */; };
@@ -61,6 +62,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		16741417214CAACB00573F95 /* NSString+Url.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Url.h"; sourceTree = "<group>"; };
+		16741418214CAACB00573F95 /* NSString+Url.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Url.m"; sourceTree = "<group>"; };
 		7406EA4F1D6BFD27007808BB /* XBUtils.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XBUtils.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7406EA531D6BFD27007808BB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7406EA551D6BFD27007808BB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -422,6 +425,8 @@
 				7445D5E51F4C28D40007FEAB /* NSAttributedString+Size.m */,
 				741D2C371FEBCAD900428662 /* NSString+HexColor.h */,
 				741D2C381FEBCAD900428662 /* NSString+HexColor.m */,
+				16741417214CAACB00573F95 /* NSString+Url.h */,
+				16741418214CAACB00573F95 /* NSString+Url.m */,
 			);
 			path = NSString;
 			sourceTree = "<group>";
@@ -564,6 +569,7 @@
 				7474AD161F316FAE0040D241 /* UIImage+ImageEffects.m in Sources */,
 				7474AD191F3171910040D241 /* UIImage+XBAdd.m in Sources */,
 				7406EA571D6BFD28007808BB /* AppDelegate.m in Sources */,
+				16741419214CAACB00573F95 /* NSString+Url.m in Sources */,
 				742239BE1F271E2E00006908 /* UIView+CornerRadius.m in Sources */,
 				7439C6361EBC8009003C6C64 /* NSURL+ParameterParser.m in Sources */,
 				740E7C5E1FC54C60007B7237 /* UIButton+TouchAnimation.m in Sources */,
