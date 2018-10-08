@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		160C162D216B428000F60798 /* XBDebugUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 160C162C216B428000F60798 /* XBDebugUtils.m */; };
 		16741419214CAACB00573F95 /* NSString+Url.m in Sources */ = {isa = PBXBuildFile; fileRef = 16741418214CAACB00573F95 /* NSString+Url.m */; };
 		7406EA541D6BFD27007808BB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7406EA531D6BFD27007808BB /* main.m */; };
 		7406EA571D6BFD28007808BB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7406EA561D6BFD28007808BB /* AppDelegate.m */; };
@@ -62,6 +63,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		160C162B216B428000F60798 /* XBDebugUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XBDebugUtils.h; sourceTree = "<group>"; };
+		160C162C216B428000F60798 /* XBDebugUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XBDebugUtils.m; sourceTree = "<group>"; };
 		16741417214CAACB00573F95 /* NSString+Url.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Url.h"; sourceTree = "<group>"; };
 		16741418214CAACB00573F95 /* NSString+Url.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Url.m"; sourceTree = "<group>"; };
 		7406EA4F1D6BFD27007808BB /* XBUtils.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XBUtils.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -289,6 +292,8 @@
 				743918321DC04E8600FCA6C6 /* AppVersionKit */,
 				743918251DC04B8900FCA6C6 /* GCDMulticastDelegate.h */,
 				743918261DC04B8900FCA6C6 /* GCDMulticastDelegate.m */,
+				160C162B216B428000F60798 /* XBDebugUtils.h */,
+				160C162C216B428000F60798 /* XBDebugUtils.m */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -584,6 +589,7 @@
 				743918351DC04EED00FCA6C6 /* NSString+XBAppVersion.m in Sources */,
 				744614581FD51E530059E243 /* XBDispatchHelper.m in Sources */,
 				74EDE3E81EA8B827001C3E00 /* NSString+Hashes.m in Sources */,
+				160C162D216B428000F60798 /* XBDebugUtils.m in Sources */,
 				743918381DC053EC00FCA6C6 /* XBAppVersion.m in Sources */,
 				744DCD8F1F3C507600EAF5EC /* NSArray+SafeOperation.m in Sources */,
 				747BFEB41F6B784000D640E3 /* XBWeakProxy.m in Sources */,

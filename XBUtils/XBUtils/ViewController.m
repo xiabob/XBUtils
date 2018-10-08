@@ -112,6 +112,10 @@
     [testArray xb_addObject:@1];
     
     [self xb_startObserverTimer];
+    
+    [XBDebugUtils debugOnly:^{
+        NSLog(@"debug test!!!!");
+    }];
 }
 
 
